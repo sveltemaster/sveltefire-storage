@@ -5,12 +5,12 @@
 
     let files = '';
     let filename = '';
-    $: path = user.email + '/' + filename;
+    $: path = user.uid + '/' + filename;
     $: file = files[0];
 
     let showDownload = false;
     let downloadFilename = '';
-    $: downloadPath = user.email + '/' + downloadFilename;
+    $: downloadPath = user.uid + '/' + downloadFilename;
 </script>
 <h1>You are {user.email}</h1>
 <h2>Upload</h2>
